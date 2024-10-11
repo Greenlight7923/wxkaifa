@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/profile/profile",
+    "pages/login/login",
+    "pages/agreement/agreement",
+    "pages/list",
+    "pages/list/list",
+    "pages/rank/rank"
+  ],
+  "tabBar": {
+    "color": "AAAAAA",
+    "selectedColor": "#FF6600",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/assets/imgs/zhuye.png",
+        "selectedIconPath": "/assets/imgs/zhuye.png"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "text": "菜谱",
+        "iconPath": "/assets/imgs/dingdan.png",
+        "selectedIconPath": "/assets/imgs/dingdan.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "/assets/imgs/geren.png",
+        "selectedIconPath": "/assets/imgs/geren.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "心悦厨至",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于获取地理位置信息"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

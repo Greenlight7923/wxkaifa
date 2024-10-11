@@ -1,0 +1,77 @@
+<!--pages/home/home.wxml-->
+<view>
+  <view class="search-wrapper">
+    <view class="search">
+      <image src="/assets/imgs/sousuo1.png"/>
+      搜索{{ name }}
+      </view>
+    </view>
+  <view class="main">
+  <view class="row">
+    <view class="title-wrapper">
+      <view class="title">热门厨师推荐</view>
+      <view class="more">查看更多<view class="arrow"></view> </view>
+    </view>
+    <view class="items">
+    <view wx:for="{{ 20 }}" class="item">
+      <image class="photo" src="https://img.zcool.cn/community/0157805d4a855ca8012187f46c1af1.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/quality,q_100"/>
+      <view class="title">单航次</view>
+      <view class="score">
+        <view class="stars">
+          <image class="star" src="/assets/imgs/star_small_on.png"/>
+          <image class="star" src="/assets/imgs/star_small_on.png"/>
+          <image class="star" src="/assets/imgs/star_small_on.png"/>
+          <image class="star" src="/assets/imgs/star_small_on.png"/>
+          <image class="star" src="/assets/imgs/star_small_half.png"/>
+        </view>
+        4.5
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="row">
+    <view class="title-wrapper">
+      <view class="title">热门菜品推荐</view>
+      <view class="more">查看更多<view class="arrow"></view> </view>
+    </view>
+    <view class="items">
+    <view wx:for="{{ 10 }}" class="item">
+      <image class="photo" src="https://img.zcool.cn/community/0125575df21c46a801219cceb55d81.jpg@1280w_1l_2o_100sh.jpg"/>
+      <view class="title">冒菜</view>
+      <view class="score">
+        <view class="stars">
+          <image class="star" src="/assets/imgs/star_small_on.png"/>
+          <image class="star" src="/assets/imgs/star_small_on.png"/>
+          <image class="star" src="/assets/imgs/star_small_on.png"/>
+          <image class="star" src="/assets/imgs/star_small_half.png"/>
+          <image class="star" src="/assets/imgs/star_small_off.png"/>
+        </view>
+        3.5
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="row">
+    <view class="title-wrapper">
+      <view class="title">甜点小菜推荐</view>
+      <view class="more">查看更多<view class="arrow"></view> </view>
+    </view>
+    <view class="items">
+    <view wx:for="{{ 20 }}" class="item">
+      <image class="photo" src="https://img.shetu66.com/2023/06/21/1687324528344484.jpg"/>
+      <view class="title">湘菜/川菜</view>
+      <view class="score">
+        <view class="stars">
+          <image class="star" src="/assets/imgs/star_small_on.png"/>
+          <image class="star" src="/assets/imgs/star_small_on.png"/>
+          <image class="star" src="/assets/imgs/star_small_on.png"/>
+          <image class="star" src="/assets/imgs/star_small_on.png"/>
+          <image class="star" src="/assets/imgs/star_small_half.png"/>
+        </view>
+        4.7
+        </view>
+      </view>
+    </view>
+  </view>
+  </view>
+</view>

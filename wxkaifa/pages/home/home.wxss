@@ -1,0 +1,107 @@
+/* pages/home/home.wxss */
+.search-wrapper{
+    background-color: #FF6700;
+    padding: 0 15rpx;
+    height: 80rpx;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20rpx;
+} 
+.search{
+    background-color: #fff;
+    border-radius: 10rpx;
+    height: 50rpx;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search image{
+    width: 32rpx;
+    height: 32rpx;
+    margin-right: 10rpx;
+}
+
+.row{
+    margin-bottom: 30rpx;
+}
+
+.title-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30rpx;
+    margin-bottom: 30rpx;
+    }
+
+.title-wrapper .title{
+    color: #494949;
+    font-size: 32rpx;
+    font-weight: bold;
+}
+
+.title-wrapper .more{
+    color: #0DB019;
+    display: flex;
+    align-items: center;
+}
+
+.title-wrapper .arrow{
+    width: 16rpx;
+    height: 16rpx;
+    border: 2rpx solid #0DB019;
+    border-left: none;
+    border-top: none;
+    transform: rotate(-45deg);
+    margin-left: 6rpx;
+}
+
+.items{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.items .item{
+    margin-left: 30rpx;
+    display:inline-flex;
+    flex-direction: column;
+    width: 160rpx;
+}
+
+.items .item:last of-type{
+    margin-right: 30rpx;
+}
+
+.item .photo{
+    width: 100%;
+    height: 223rpx;
+    margin-bottom: 10rpx;
+}
+
+.item .title{
+    width:100%;
+    font-weight: bold;
+    font-size: 30rpx;
+    margin-bottom: 4rpx;
+    /*超出宽度的内容直接隐藏*/
+    overflow: hidden;
+    /*尾部超出的内容显示省略号*/
+    text-overflow: ellipsis;
+}
+
+.score{
+    display: flex;
+    align-items: center;
+    color: #818181;
+}
+
+.score .stars{
+    display: flex;
+    margin-right: 4rpx;
+}
+
+.stars .star{
+    width: 24rpx;
+    height: 24rpx;
+}

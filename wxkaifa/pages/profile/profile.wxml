@@ -1,0 +1,106 @@
+<!--pages/profile/profile.wxml-->
+<view>
+  <view>城市：{{ info.address }}</view>
+  <view class="login-wrapper">
+  <view class="login" bind:tap="login">登录</view>
+  <image src="/assets/imgs/fantuan.png" mode="aspectFill"/>
+  </view>
+
+  <view class="items-wrapper">
+    <view class="title-wrapper">
+      <view class="title">我的服务</view>
+      <view class="view">
+        查看全部
+        <view class="arrow"></view>
+      </view>
+    </view>
+
+    <view class="items">
+      <view wx:for="{{ items }}" class="item" wx:key="unique">
+        <image class="icon" src="/assets/imgs/{{ item.icon }}" />
+        <view class="info-wrapper">
+            <view class="info">
+              <view class="left">
+                <view class="top">{{ item.title }}</view>
+                <view class="bottom">
+                  <view class="count">{{ item.count }}</view>
+                  <view class="text">{{ item.has }}</view>
+                </view>
+                </view>
+              <view data-index="{{ index }}" id="item-{{ index }}" class="right" bind:tap>
+                <text class="text">{{ item.mark }}</text>
+                <!-- <view class="begin-warpper"> -->
+                <view class="begin">管理</view>
+                <view class="arrow"></view>
+                <!-- </view> -->
+              </view>
+              </view>
+            <view class="divider"></view>
+          </view>    
+        </view>
+        
+      <!-- <view class="item">
+        <image class="icon" src="/assets/imgs/{{ items[1].icon }}" />
+        <view class="info-wrapper">
+            <view class="info">
+              <view class="left">
+                <view class="top">{{ items[1].title }}</view>
+                <view class="bottom">
+                  <view class="count">{{ items[1].count }}</view>
+                  <view class="text">{{ items[1].has }}</view>
+                </view>
+                </view>
+              <view class="right">
+                <text class="text">{{ items[1].mark }}</text>
+                <view class="begin">地址管理</view>
+                <view class="arrow"></view>
+              </view>
+              </view>
+            <view class="divider"></view>
+          </view>    
+        </view>
+
+      <view class="item"> 
+        <image class="icon" src="/assets/imgs/{{ items[2].icon }}" />
+        <view class="info-wrapper">
+            <view class="info">
+              <view class="left">
+                <view class="top">{{ items[2].title }}</view>
+                <view class="bottom">
+                  <view class="count">{{ items[2].count }}</view>
+                  <view class="text">{{ items[2].has }}</view>
+                </view>
+                </view>
+              <view class="right">
+                <text class="text">{{ items[2].mark }}</text>
+                <view class="begin">地址管理</view>
+                <view class="arrow"></view>
+              </view>
+              </view>
+          </view>    
+        </view> -->
+      </view>
+    </view>
+    <!-- <view class="item">
+      <image src="/assets/imgs/address.png" mode="aspectFill"/>
+      <view class="text">地址管理</view>
+    </view>
+    <view class="item">
+      <image src="/assets/imgs/feedback.png" mode="aspectFill"/>
+      <view class="text">意见反馈</view>
+    </view>
+    <view class="title">我的订单</view>
+    <view class="item">
+      <image src="/assets/imgs/order.png" mode="aspectFill"/>
+      <view class="text">全部订单</view>
+    </view>
+    <view class="item">
+      <image src="/assets/imgs/pay.png" mode="aspectFill"/>
+      <view class="text">待付款</view>
+    </view>
+    <view class="item">
+      <image src="/assets/imgs/send.png" mode="aspectFill"/>
+      <view class="text">待发货</view>
+    </view> -->
+ <view class="version">版本1.0.0</view>
+</view>

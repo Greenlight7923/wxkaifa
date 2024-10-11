@@ -1,0 +1,11 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+    <image class="logo" src="/assets/imgs/tubiao.png" />
+    <view class="wechat btn-login" bind:tap = "wechatLogin">微信登录</view>
+    <view class="qita btn-login" bind:tap = "qitaLogin">其他方式登录</view>
+
+    <view class="agreement">
+    登录表示同意
+     <view class="open" bind:tap="openAgreement">用户使用协议/隐私协议</view>
+    </view>
+ </view>
